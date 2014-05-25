@@ -1,0 +1,17 @@
+#server_5
+server_4の改良。
+CommBufの最初の空白文字を削除。
+一文字づつ送られてくる場合にも対応。
+
+#server_4
+server_3の改良。
+C for Linuxによるコード(242ページまでの分)の改良。
+CommBuf変数を追加。
+RecvBufにバファリングしながらCommBuf溜める。
+';'でコマンド処理/バッファクリア。
+
+#server_3
+C for Linuxによるコード(242ページまでの分)。
+childloop.c mainloop.c　の分離。
+ChildLoopの改良。
+

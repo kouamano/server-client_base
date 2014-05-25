@@ -1,0 +1,62 @@
+#server_16
+InitParam()の削除。
+InitSocket(char *_servname): サービスネームを引数として渡す仕様に変更。
+listen()のタイミングを修正。
+
+#server_15
+終了処理の拡張
+
+#server_14
+終了処理をミスっていたのを修正。
+RecvData()がend_flagを返すように。
+
+#server_13
+server_12の清書。
+
+#server_12
+server_11の清書。
+
+#server_11
+バッファ、RsltBufの追加。
+関数、ExecComm()の追加。
+
+#server_10
+SendData()
+の改良。
+
+#servet_9
+コマンド終了を0x04に変更。
+
+#server_8
+server_7の改良。
+セミコロンのエスケープを可能に。
+エスケープキー'\'の入力を可能に。
+最低限のコマンド処理の準備が完了。
+
+#server_7
+server_6の改良。
+SendData() - 一度に送られない場合に対応。
+最低限のロバスト性を備えたサーバになっているはず。
+
+#server_6
+server_5の改良。
+クライアント側にCommを送信。
+CommBufサイズを越えるコマンドの打ち切り処理。
+
+#server_5
+server_4の改良。
+CommBufの最初の空白文字を削除。
+これにより一文字づつ送られてくる場合にも対応。
+
+#server_4
+server_3の改良。
+C for Linuxによるコード(242ページまでの分)の改良。
+CommBuf変数を追加。
+RecvBufにバファリングしながらCommBuf溜める。
+';'でコマンド処理/バッファクリア。
+
+#server_3
+C for Linuxによるコード(242ページまでの分)。
+childloop.c mainloop.c　の分離。
+ChildLoopの改良。
+

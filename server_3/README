@@ -1,0 +1,4 @@
+#server_3
+C for Linuxによるコード(242ページまでの分)。
+childloop.c mainloop.c　の分離。
+ChildLoopの改良。
